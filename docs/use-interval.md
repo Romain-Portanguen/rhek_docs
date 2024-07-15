@@ -2,9 +2,11 @@
 
 `useInterval` is a custom hook that sets up an interval.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React, { useState } from 'react';
-import { useInterval } from 'react-hook-kit';
+import { useInterval } from 'react-hook-extended-kit';
 
 const IntervalComponent: React.FC = () => {
   const [count, setCount] = useState(0);

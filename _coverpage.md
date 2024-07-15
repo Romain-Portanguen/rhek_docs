@@ -31,7 +31,7 @@
 </p>
 
 [GitHub](https://github.com/Romain-Portanguen/react_hook_extended_kit)
-[Get Started](#)
+[Get Started](#main)
 
 <!-- background color -->
 ![color](#3F3F3F)

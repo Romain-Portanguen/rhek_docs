@@ -2,9 +2,11 @@
 
 `useFetch` is a custom hook to fetch data from an API.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React from 'react';
-import { useFetch } from 'react-hook-kit';
+import { useFetch } from 'react-hook-extended-kit';
 
 const FetchComponent: React.FC = () => {
   const { data, error, loading } = useFetch('https://api.example.com/data');

@@ -2,9 +2,11 @@
 
 `useCounter` is a custom hook that provides a counter state with increment, decrement, and reset functions.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React from 'react';
-import { useCounter } from 'react-hook-kit';
+import { useCounter } from 'react-hook-extended-kit';
 
 const CounterComponent: React.FC = () => {
   const [count, increment, decrement, reset] = useCounter(0);

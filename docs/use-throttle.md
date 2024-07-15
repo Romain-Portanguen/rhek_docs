@@ -2,9 +2,11 @@
 
 `useThrottle` is a custom hook that throttles a value.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React, { useState } from 'react';
-import { useThrottle } from 'react-hook-kit';
+import { useThrottle } from 'react-hook-extended-kit';
 
 const ThrottleComponent: React.FC = () => {
   const [value, setValue] = useState('');

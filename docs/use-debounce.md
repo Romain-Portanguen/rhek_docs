@@ -2,9 +2,11 @@
 
 `useDebounce` is a custom hook that debounces a value.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React, { useState } from 'react';
-import { useDebounce } from 'react-hook-kit';
+import { useDebounce } from 'react-hook-extended-kit';
 
 const DebounceComponent: React.FC = () => {
   const [value, setValue] = useState('');

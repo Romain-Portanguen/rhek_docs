@@ -2,9 +2,11 @@
 
 `useClipboard` is a custom hook for clipboard operations.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React, { useState } from 'react';
-import { useClipboard } from 'react-hook-kit';
+import { useClipboard } from 'react-hook-extended-kit';
 
 const ClipboardComponent: React.FC = () => {
   const [clipboardText, copyToClipboard, readFromClipboard] = useClipboard();

@@ -2,9 +2,11 @@
 
 `usePrevious` is a custom hook that returns the previous value of a variable.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React, { useState } from 'react';
-import { usePrevious } from 'react-hook-kit';
+import { usePrevious } from 'react-hook-extended-kit';
 
 const PreviousComponent: React.FC = () => {
   const [count, setCount] = useState(0);

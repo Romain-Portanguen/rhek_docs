@@ -3,3 +3,7 @@
   height: auto;
   width: 200px;
 }
+
+.content {
+  overflow-y: auto;
+}

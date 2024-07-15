@@ -2,9 +2,11 @@
 
 `useClickOutside` is a custom hook that triggers a callback when a click is detected outside the referenced element.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React, { useState } from 'react';
-import { useClickOutside } from 'react-hook-kit';
+import { useClickOutside } from 'react-hook-extended-kit';
 
 const ClickOutsideComponent: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

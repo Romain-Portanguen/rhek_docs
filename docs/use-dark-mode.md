@@ -2,9 +2,11 @@
 
 `useDarkMode` is a custom hook that manages dark mode using localStorage.
 
+## Usage <!-- {docsify-ignore} -->
+
 ```tsx
 import React from 'react';
-import { useDarkMode } from 'react-hook-kit';
+import { useDarkMode } from 'react-hook-extended-kit';
 
 const DarkModeComponent: React.FC = () => {
   const [isDarkMode, toggleDarkMode] = useDarkMode();

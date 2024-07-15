@@ -12,19 +12,24 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
       name: '<span>RHEK - React Hook Extended Kit</span>',
-      repo: 'https://github.com/Romain-Portanguen/react_hook_extended_kit',
-      loadSidebar: true,
       coverpage: true,
+      homepage: 'README.md',
+      loadNavbar: true,
+      loadSidebar: true,
       logo: './assets/rhek_logo.png',
+      repo: 'https://github.com/Romain-Portanguen/react_hook_extended_kit',
       subMaxLevel: 3,
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-tsx.min.js"></script>
 </body>
 
 </html>
