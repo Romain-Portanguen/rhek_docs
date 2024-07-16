@@ -1,25 +1,35 @@
-# useCounter
+# useLocalStorage
 
-`useCounter` is a custom hook that provides a counter state with increment, decrement, and reset functions.
+`useLocalStorage` is a custom hook that synchronizes state with localStorage.
+
+## Parameters
+
+- `key` - The key to store the value under in localStorage.
+- `initialValue` - The initial value to use if the key is not present in localStorage.
+
+## Returns
+
+An array containing the current value and a function to update it.
 
 ## Usage <!-- {docsify-ignore} -->
 
 ```tsx
 import React from 'react';
-import { useCounter } from 'react-hook-extended-kit';
+import { useLocalStorage } from 'react-hook-extended-kit';
 
-const CounterComponent: React.FC = () => {
-  const [count, increment, decrement, reset] = useCounter(0);
+const LocalStorageComponent: React.FC = () => {
+  const [name, setName] = useLocalStorage('name', 'John Doe');
 
   return (
     <div>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-      <button onClick={reset}>Reset</button>
+      <p>Name: {name}</p>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
     </div>
   );
 };
 
-export default CounterComponent;
-```
+export default LocalStorageComponent;
