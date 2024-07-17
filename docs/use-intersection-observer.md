@@ -4,8 +4,6 @@
 
 ## Usage <!-- {docsify-ignore} -->
 
-### Example component <!-- {docsify-ignore} -->
-
 ```tsx
 import React from 'react';
 import { useIntersectionObserver } from 'react-hook-extended-kit';
@@ -23,21 +21,4 @@ const LazyImage: React.FC<{ src: string; alt: string }> = ({ src, alt }) => {
     </div>
   );
 };
-```
-
-### App <!-- {docsify-ignore} -->
-
-```tsx
-const App: React.FC = () => {
-  return (
-    <div>
-      <h1>Lazy Loading Images Example</h1>
-      <LazyImage src="https://via.placeholder.com/300" alt="Example Image 1" />
-      <LazyImage src="https://via.placeholder.com/300" alt="Example Image 2" />
-      <LazyImage src="https://via.placeholder.com/300" alt="Example Image 3" />
-    </div>
-  );
-};
-
-export default App;
 ```

@@ -5,8 +5,6 @@
 
 ## Usage <!-- {docsify-ignore} -->
 
-### Example component <!-- {docsify-ignore} -->
-
 ```tsx
 import React, { useState } from 'react';
 import { useEventListener } from 'react-hook-extended-kit';
@@ -24,21 +22,4 @@ const Modal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     </div>
   );
 };
-```
-
-### App <!-- {docsify-ignore} -->
-
-```tsx
-const App: React.FC = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  return (
-    <div>
-      <button onClick={() => setModalOpen(true)}>Open Modal</button>
-      {isModalOpen && <Modal onClose={() => setModalOpen(false)} />}
-    </div>
-  );
-};
-
-export default App;
 ```

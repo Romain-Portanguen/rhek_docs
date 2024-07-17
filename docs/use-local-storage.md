@@ -2,12 +2,12 @@
 
 `useLocalStorage` is a custom hook that synchronizes state with localStorage.
 
-## Parameters
+## Parameters <!-- {docsify-ignore} -->
 
 - `key` - The key to store the value under in localStorage.
 - `initialValue` - The initial value to use if the key is not present in localStorage.
 
-## Returns
+## Returns <!-- {docsify-ignore} -->
 
 An array containing the current value and a function to update it.
 

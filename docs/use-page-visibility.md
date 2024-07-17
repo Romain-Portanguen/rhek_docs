@@ -5,8 +5,6 @@
 
 ## Usage <!-- {docsify-ignore} -->
 
-### Example component <!-- {docsify-ignore} -->
-
 ```tsx
 import React, { useRef } from 'react';
 import { usePageVisibility } from 'react-hook-extended-kit';
@@ -34,19 +32,4 @@ const VideoPlayer: React.FC = () => {
     </div>
   );
 };
-```
-
-### App <!-- {docsify-ignore} -->
-
-```tsx
-const App: React.FC = () => {
-  return (
-    <div>
-      <h1>Page Visibility Example</h1>
-      <VideoPlayer />
-    </div>
-  );
-};
-
-export default App;
 ```
